@@ -1,0 +1,9 @@
+<h1>Scheduled Performances</h1>
+<%= link_to "Sign up for a performance!", new_performance_path %>
+<div id="performances">
+  <% @performances.each do |performance| %>
+    <div>
+      <%= link_to "#{performance.title} by #{performance.name}", performance_path(performance.id) %>
+    </div>
+  <% end %>
+</div>
