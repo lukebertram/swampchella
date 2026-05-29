@@ -1,0 +1,4 @@
+<h1><%= @performance.title %></h1>
+<%= link_to "Back to Full Schedule", performances_path %>
+<%= link_to "Edit", edit_performance_path(@performance) %>
+<%= button_to "Delete", @performance, method: :delete, data: { turbo_confirm: "Are you sure you want to delete this performance?"} %>
